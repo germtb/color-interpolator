@@ -16,7 +16,7 @@ The idea is the following:
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Motion, spring} from 'react-motion';
-import {toRGB, colorInterpolation} from 'color-interpolator';
+import {colorInterpolation} from 'color-interpolator';
 
 const SlideColor = props => {
   // Since it is not possible to use spring over a color, a parameter is used
