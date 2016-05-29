@@ -1,0 +1,25 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true
+    },
+  },
+  "rules": {
+    "no-mixed-spaces-and-tabs": [2, "smart-tabs"],
+    "indent": [2, 2],
+    "quotes": [2, "single"],
+    "no-trailing-spaces": [2, { "skipBlankLines": true }],
+    "no-unused-vars": 2,
+    "semi": [2, "always"],
+    "strict": 0,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2
+  }
+}
