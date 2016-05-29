@@ -1,6 +1,6 @@
 {
   "name": "color-interpolator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Color interpolator to be used with react-motion",
   "main": "dist/color-interpolator-es5.js",
   "babel": {
