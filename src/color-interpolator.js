@@ -20,7 +20,6 @@ export const toRGB = function(color) {
 export const colorInterpolation = function(color1, color2, t) {
   const rgb1 = toRGB(color1);
   const rgb2 = toRGB(color2);
-  console.log(rgb1);
   return toHex({
     r: Math.abs(Math.floor(rgb2.r * t - rgb1.r * (1 - t))),
     g: Math.abs(Math.floor(rgb2.g * t - rgb1.g * (1 - t))),
