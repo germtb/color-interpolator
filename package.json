@@ -5,14 +5,13 @@
   "main": "dist/color-interpolator-es5.js",
   "babel": {
     "presets": [
-      "es2015",
-      "react"
+      "es2015"
     ]
   },
   "scripts": {
     "test": "mocha --compilers js:babel-core/register 'test/**/*.@(js|jsx)'",
     "test:watch": "npm run test -- --watch",
-    "build": "babel src/color-interpolator.js > dist/color-interpolator-es5.js"
+    "build": "babel src/color-interpolator.js -o dist/color-interpolator-es5.js"
   },
   "keywords": ["color", "interpolate", "react-motion"],
   "author": "Gerard Moreno-Torre Bertran",

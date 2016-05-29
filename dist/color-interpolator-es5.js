@@ -25,9 +25,8 @@ var colorInterpolation = exports.colorInterpolation = function colorInterpolatio
   var rgb1 = toRGB(color1);
   var rgb2 = toRGB(color2);
   return toHex({
-    r: Math.abs(Math.floor(rgb2.r * t - rgb1.r * (1 - t))),
-    g: Math.abs(Math.floor(rgb2.g * t - rgb1.g * (1 - t))),
-    b: Math.abs(Math.floor(rgb2.b * t - rgb1.b * (1 - t)))
+    r: Math.abs(Math.floor(rgb2.r * t + rgb1.r * (1 - t))),
+    g: Math.abs(Math.floor(rgb2.g * t + rgb1.g * (1 - t))),
+    b: Math.abs(Math.floor(rgb2.b * t + rgb1.b * (1 - t)))
   });
 };
-
