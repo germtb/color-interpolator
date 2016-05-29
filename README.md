@@ -21,7 +21,7 @@ import {toRGB, colorInterpolation} from 'color-interpolator';
 const SlideColor = props => {
   const color1 = toRGB(props.origin);
   const color2 = toRGB(props.end);
-  ## Since it is not possible to use spring over a color, a parameter is used
+  // Since it is not possible to use spring over a color, a parameter is used
   const defaultStyle = {
     t: 0
   };
@@ -31,7 +31,7 @@ const SlideColor = props => {
   return (
     <Motion defaultStyle={defaultStyle} style={endStyle}>
       {style => {
-          ## Here the parameter is used as an interpolation parameter
+          // Here the parameter is used as an interpolation parameter
           const color = colorInterpolation(props.origin, props.end, style.t);
           console.log(style.t);
           return (
