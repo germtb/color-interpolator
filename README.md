@@ -12,7 +12,7 @@ npm install --save color-interpolator
 I have an example of how to use it in: `https://github.com/germtb/react-motion-examples`
 
 The idea is the following:
-```
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Motion, spring} from 'react-motion';
