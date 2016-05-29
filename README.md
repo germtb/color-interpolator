@@ -19,8 +19,6 @@ import {Motion, spring} from 'react-motion';
 import {toRGB, colorInterpolation} from 'color-interpolator';
 
 const SlideColor = props => {
-  const color1 = toRGB(props.origin);
-  const color2 = toRGB(props.end);
   // Since it is not possible to use spring over a color, a parameter is used
   const defaultStyle = {
     t: 0
